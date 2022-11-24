@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+  <!-- Header Section  -->
+
+  <header>
+    <nav class="navbar">
+      <a href="/index.html"><img src="/imagenes/logos/circle.svg" alt="Circle-logo"/></a>
+      <ul class="nav-menu">
+        <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+        <li class="nav-item"><a href="projects.html" class="nav-link">Projects</a></li>
+        <li class="nav-item"><a href="#" class="nav-link">Services</a></li>
+      </ul>
+      
+      <!-- MENU HAMBURGUESA -->
+      <div>
+        <a href="contacus.html" class="contact-button">Contact Us</a>
+      </div>
+      <div class="hamburger">
+        <span class="bar"> </span>
+        <span class="bar"> </span>
+        <span class="bar"> </span>
+      </div>
+    </nav>
+  </header>
+  
+  <!-- ProjectS Section  -->
+
+  <section id="projectSection">
+    <h1 class="project-page-title">Simplify</h1>
+    <div class="project-type-wrapper">
+      <h2 class="project-page-type">UI Design & App Development</h2>
+      <div class="project-completion">
+        <p>Completed on</p>
+        <p class="project-completion-date">2/2/22</p>
+      </div>
+    </div>
+
+    <!-- IMAGEN GRANDOTA CON TEXTO -->
+    <img class="project-page-image" src="/imagenes/projects-section/1.jpg" alt="project-img-1"/>
+    <div class="project-text">
+      <p class="project-text-text">Simplify is lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        Sed feugiat faucibus sem, id vulputate justo ornare non. Nullam et
+        vehicula sem. Pellentesque bibendum massa non nisl posuere cursus.
+        Aliquam ac eros pretium neque consequat facilisis. Ut sit amet justo
+        varius ex ultrices fringilla. Sed vel turpis fringilla ante gravida
+        vestibulum. Etiam a sollicitudin leo. Nunc metus lectus, lacinia ut
+        arcu quis, pretium congue lacus.</p>
+        <p>Aliquam blandit varius metus, in mattis orci convallis sit amet. Fusce et sem ac velit placerat ultrices in id dolor. Sed eget auctor metus. Sed suscipit fringilla lectus, a maximus justo bibendum a. Donec et pellentesque nisl, vitae tempus lorem. Sed efficitur cursus rhoncus. Duis placerat nisi quis mi tincidunt, sit amet tincidunt urna convallis. Nam et sagittis felis. Pellentesque placerat orci sodales nisi convallis ultrices. Nunc posuere neque eu mi imperdiet ullamcorper. Praesent tempor convallis rutrum. Vestibulum dignissim pellentesque eros in placerat. Etiam at nisi quis quam sollicitudin vehicula sit amet vel mi.</p>
+    </div>
+  </section>
+
+
+  <!-- LAS OTRAS TARJETAS DE LOS PROYECTOS -->
+
+  <section id="recentProjects">
+    <div>
+      <h2>Other Projects</h2>
+    </div>
+    <div class="grid-recentProjects" role="list">
+      <!-- <div class="cards-recentProjects" role="list-item">
+        <div>
+          <img
+            class="img-recentProjects"
+            src="./project-assets/projects-section/1.jpg"
+            alt="project-image-1"
+          />
+        </div>
+        <h4 class="project-title">Simplify</h4>
+        <p class="project-description">UI Design & App Development</p>
+        <a href="#">Learn More</a>
+      </div>
+      <div class="cards-recentProjects" role="list-item">
+        <div>
+          <img
+            class="img-recentProjects"
+            src="./project-assets/projects-section/2.jpg"
+            alt="project-image-1"
+          />
+        </div>
+        <h4>Dashcoin</h4>
+        <p>Web Development</p>
+        <a href="#">Learn More</a>
+      </div>
+      <div class="cards-recentProjects" role="list-item">
+        <div>
+          <img
+            class="img-recentProjects"
+            src="./project-assets/projects-section/3.jpg"
+            alt="project-image-1"
+          />
+        </div>
+        <h4>Vectorify</h4>
+        <p>User Experience Design</p>
+        <a href="#">Learn More</a>
+      </div> -->
+    </div>
+  </section>
+
+  <!-- YELLOW SECTION  -->
+
+  <section id="yellow">
+    <div class="yellow-content">
+      <h2>Do you have any questions?</h2>
+      <p>Let us help you!</p>
+      <div class="emailform">
+        <form action="" id="yellowsubscribe" name="yellowsubscribe" method="get">
+          <div class="subscribe-text">
+            <img src="/imagenes/newsletter/icon/mail.svg" alt="mail-img"/>
+            <input type="email" name="entermail" id="entermail" data-name="Enter mail" placeholder="Enter your email" required/>
+          </div>
+          <input class="subscribe-button" type="submit" value="Subscribe" data-wait="Please wait..."/>
+        </form>
+        <div class="ok-form">
+          <p>Thank you! Your submission has been received!</p>
+        </div>
+        <div class="f-form">
+          <p>Oops! Something went wrong while submitting the form.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer  -->
+  <footer>
+    <div class="lastsection">
+      <div class="lastcontent">
+        <img src="/imagenes/logos/circle.svg" alt="logo" />
+        <p>
+          2972 Westheimer Rd. Stanta Ana,<br />
+          Illinois 85486
+        </p>
+      </div>
+      <div class="lastlinks">
+        <a href="#">Team</a>
+        <a href="#">Services</a>
+        <a href="#">About Us</a>
+        <a href="#">Press</a>
+        <a href="#">Projects</a>
+        <a href="#">Privacy Policy</a>
+      </div>
+    </div>
+  </footer>
+  <script src="/hamburger.js"></script>
+  <script src="/projects.js"></script>
+</body>
+</html>

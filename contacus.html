@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact us</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- HEADER SECTION -->
+    <header>
+        <nav class="navbar">
+            <a href="/index.html"><img src="/imagenes/logos/circle.svg" alt="Circle-logo"/></a>
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="/index.html" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="/projects.html" class="nav-link">Projects</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Services</a></li>
+            </ul>
+            <!-- MENU HAMBURGUESA -->
+            <div>
+                <a href="./contacus.html" class="contact-button">Contact Us</a>
+            </div>
+            <div class="hamburger">
+                <span class="bar"> </span>
+                <span class="bar"> </span>
+                <span class="bar"> </span>
+            </div>
+        </nav>
+    </header>
+    <!-- Form section  -->
+    <section id="contactUs">
+        <h1>Contact Us</h1>
+        <div>
+            <form class="form-contact-container" id="email-form" name="email-form" method="get">
+                <div class="contact-wrapper">
+                    <label for="name" class="contact-title">Full Name*</label>
+                    <input type="text"class="contact-text-input"placeholder="Enter your full name"id="name"required/>
+                </div>
+                <div class="contact-row-grid">
+                    <div class="contact-wrapper">
+                        <label for="mail" class="contact-title">Email</label>
+                        <input type="email" class="contact-text-input row" placeholder="Enter your email" id="mail"/>
+                    </div>
+                    <div class="contact-wrapper">
+                        <label for="phone" class="contact-title">Phone</label>
+                        <input type="number" class="contact-text-input row" placeholder="Enter your phone" id="phone"/>
+                    </div>
+                </div>
+                <div class="contact-wrapper">
+                    <label for="message" class="contact-title">Message*</label>
+                    <textarea class="contact-text-input textarea" placeholder="Write your message here..." maxlength="5000" id="message" required data-name="message"></textarea>
+                </div>
+                <input type="submit" value="Submit" data-wait="Please wait..." id="" class="contact-submit-btn"/>
+            </form>
+            <div class="ok-form">
+                <p>Thank you! Your submission has been received!</p>
+            </div>
+            <div class="f-form">
+                <p>Oops! Something went wrong while submitting the form.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- LAST SECTION -->
+
+    <footer>
+        <div class="lastsection">
+            <div class="lastcontent">
+                <img src="/imagenes/logos/circle.svg" alt="logo" />
+                <p>2972 Westheimer Rd. Stanta Ana,<br />
+                        Illinois 85486</p>
+            </div>
+            <div class="lastlinks">
+                <a href="#">Team</a>
+                <a href="#">Services</a>
+                <a href="#">About Us</a>
+                <a href="#">Press</a>
+                <a href="#">Projects</a>
+                <a href="#">Privacy Policy</a>
+            </div>
+        </div>
+    </footer>
+    <script src="./index.js"></script>
+    <script src="/hamburger.js"></script>
+    <script src="/contacus.js"></script>
+</body>
+</html>
