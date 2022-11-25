@@ -3,8 +3,8 @@ const getInfoJson = () => {
     fetch("https://jsonplaceholder.typicode.com/posts")
         .then((response) => response.json())
         .then((res) => {
-            document.querySelector(".project-page-title").innerText = res[0].title.slice(0,20);
-            document.querySelector(".project-text-text").innerText = res[0].body;
+            document.querySelector(".simplify-title").innerText = res[0].title.slice(0,20);
+            document.querySelector(".simplify-bigtext").innerText = res[0].body;
         });
 };
 

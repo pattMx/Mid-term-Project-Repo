@@ -28,30 +28,31 @@
             </div>
         </nav>
     </header>
-    <!-- Form section  -->
-    <section id="contactUs">
+
+    <!-- Formularios section  -->
+    <section id="contactus-section">
         <h1>Contact Us</h1>
         <div>
-            <form class="form-contact-container" id="email-form" name="email-form" method="get">
-                <div class="contact-wrapper">
-                    <label for="name" class="contact-title">Full Name*</label>
-                    <input type="text"class="contact-text-input"placeholder="Enter your full name"id="name"required/>
+            <form class="contact-section" id="email-contact" name="email-contact" method="get">
+                <div class="boxes">
+                    <label for="name" class="boxes-titles">Full Name*</label>
+                    <input type="text"class="enter-input"placeholder="Enter your full name"id="name"required/>
                 </div>
-                <div class="contact-row-grid">
-                    <div class="contact-wrapper">
-                        <label for="mail" class="contact-title">Email</label>
-                        <input type="email" class="contact-text-input row" placeholder="Enter your email" id="mail"/>
+                <div class="grid-formulario">
+                    <div class="boxes">
+                        <label for="mail" class="boxes-titles">Email</label>
+                        <input type="email" class="enter-input enter" placeholder="Enter your email" id="mail"/>
                     </div>
-                    <div class="contact-wrapper">
-                        <label for="phone" class="contact-title">Phone</label>
-                        <input type="number" class="contact-text-input row" placeholder="Enter your phone" id="phone"/>
+                    <div class="boxes">
+                        <label for="phone" class="boxes-titles">Phone</label>
+                        <input type="number" class="enter-input enter" placeholder="Enter your phone" id="phone"/>
                     </div>
                 </div>
-                <div class="contact-wrapper">
-                    <label for="message" class="contact-title">Message*</label>
-                    <textarea class="contact-text-input textarea" placeholder="Write your message here..." maxlength="5000" id="message" required data-name="message"></textarea>
+                <div class="boxes">
+                    <label for="message" class="boxes-titles">Message*</label>
+                    <textarea class="enter-input entertext" placeholder="Write your message here..." maxlength="5000" id="message" required data-name="message"></textarea>
                 </div>
-                <input type="submit" value="Submit" data-wait="Please wait..." id="" class="contact-submit-btn"/>
+                <input type="submit" value="Submit" data-wait="Please wait..." id="" class="submit-button"/>
             </form>
             <div class="ok-form">
                 <p>Thank you! Your submission has been received!</p>
@@ -81,7 +82,6 @@
             </div>
         </div>
     </footer>
-    <script src="./index.js"></script>
     <script src="/hamburger.js"></script>
     <script src="/contacus.js"></script>
 </body>

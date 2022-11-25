@@ -491,36 +491,50 @@ a {
     margin-top: 20px;
 }
 
-/* CONTACT US FORM */
+/* CONTACT US FORMULARIO */
 
-#contactUs {
+#contactus-section {
     width: 90%;
     margin: 5rem auto 0 auto;
 
 }
 
-#contactUs h1 {
+#contactus-section h1 {
     font-size: 48px;
     font-weight: 500;
     color: #292e47;
     width: 100%;
     padding: 0;
 }
-.form-contact-container {
+.contact-section {
     display: flex;
     flex-direction: column;
 }
-.contact-title {
-        font-size: 1.5rem;
-        color: #6b708d;
-        padding: 20px 0 10px 0;
+
+/* grid del formulario */
+.grid-formulario {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 20px;
+    max-width: 100%;
 }
-.contact-wrapper {
+
+/* cajas del formulario */
+.boxes {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
 }
-.contact-text-input {
+
+/* titulo de las cajitas de enter */
+.boxes-titles {
+        font-size: 1.5rem;
+        color: #6b708d;
+        padding: 20px 0 10px 0;
+}
+
+/* cajitas que se rellenan */
+.enter-input {
     background-color: rgba(107, 112, 141, 0.1);
     border: none;
     width: auto;
@@ -528,40 +542,39 @@ a {
     font-size: 16px;
     padding-left: 20px;
 }
-.contact-row-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    column-gap: 20px;
-    max-width: 100%;
-}
 
-.contact-text-input.textarea {
+
+.enter-input.entertext {
     height: 150px;
     font-size: 16px;
     padding-left: 20px;
     padding-top: 20px;
 }
-.contact-submit-btn {
+
+/* ultimo boton */
+.submit-button {
+    font-size: 20px;
     color: #ffff;
     background-color: #072ac8;
     border: none;
     padding: 25px 30px;
     margin-top: 20px;
+    cursor: pointer;
 }
-.contact-submit-btn:hover {
+.submit-button:hover {
     background-color: #292e47;
 }
 
 /* PROJECTOS */
 
-#projectSection {
+#all-the-projects {
     margin: 80px auto 0 auto;
     width: 90%;
     display: flex;
     flex-direction: column;
 }
 
-.project-page-title {
+.simplify-title {
     font-size: 50px;
     font-weight: 500;
     color: #292e47;
@@ -570,31 +583,35 @@ a {
     margin-bottom: 20px;
 }
 
-.project-type-wrapper {
+.projectcontent {
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-bottom: 20px;
 }
-.project-page-type {
+.Simplify-subtitle {
     font-size: 30px;
     font-weight: 500;
 }
-.project-completion {
+.simplify-completed-on {
     display: flex;
-    font-size: 22px;
+    font-size: 30px;
+    color: black;
 }
-.project-completion p {
+.simplify-completed-on p {
     padding-left: 5px;
 }
-.project-page-image {
+
+.simplify-image {
+    max-width: 100%;
     width: 100%;
     height: 444px;
     object-fit: cover;
     margin: 50px auto;
+    border: 0;
 }
 
-.project-text p {
+.simplify-content-text p {
     font-size: 24px;
     line-height: 35px;
 }
@@ -629,13 +646,13 @@ a {
     }
 
 
-    #projectSection {
+    #all-the-projects {
         margin-top: 20px;
     }
-    #projectSection h1 {
+    #all-the-projects h1 {
         margin: 0;
     }
-    .project-type-wrapper {
+    .projectcontent {
         flex-direction: column;
     }
 }
@@ -778,9 +795,9 @@ a {
         text-align: center;
     }
 
-    /* CONTACT US  */
+    /* grid del formulario  */
 
-    .contact-row-grid {
+    .grid-formulario {
         grid-template-columns: 1fr;
         grid-template-rows: auto auto;
     }

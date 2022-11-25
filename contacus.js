@@ -21,16 +21,16 @@ const addInfo = (preventForm) => {
         .then((response) => response.json())
         .then((formData) => console.log(formData))
         .catch(() => {
-            let formDone = document.querySelector(".s-form-done");
+            let formDone = document.querySelector(".ok-form");
             formDone.style.display = "block";
         })
         .then(() => inputs.reset())
         .catch((error) => {
-            let formFail = document.querySelector(".s-form-fail");
+            let formFail = document.querySelector(".f-form");
             formFail.style.display = "block";
             console.log("ERROR");
         });
 };
 
-let inputs = document.querySelector("#email-form");
+let inputs = document.querySelector("#email-contact");
 inputs.addEventListener("submit", addInfo);

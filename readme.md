@@ -5,10 +5,24 @@ https://trello.com/invite/b/gHshw4Ny/ATTI20a627aa2b51720ff4742411333cfff4B8799D7
 
 ### Day 1
 
-- structure the project
+- ✅ Creación del repositorio.
+- ✅ Vincular proyecto con el repositorio
 
 ### Day 2
 
-- I start with the html of the first page and its respective css. They are not finished there are details with the css
+- ✅ LOS TRES HTML CORRESPONDIENTES
+- ✅ EL CSS DEL HTML HOME
 
 ### Day 3
+
+- ✅ LOS CSS FALTANTES
+
+### DAY 4
+
+- ✅ FORMULARIO JS
+- ✅ MENU HAMBURGUESA
+- ✅ COMENZAR JS
+
+### DAY 5
+
+- ✅ JSON/API
