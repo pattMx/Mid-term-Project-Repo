@@ -1,14 +1,11 @@
 
-const infoJson = () => {
+const jsonapi = () => {
     fetch("https://jsonplaceholder.typicode.com/posts")
         .then((response) => response.json())
-        .then((res) => {
-            let externalApiInfo = "";
-            let newArray = res.slice(0, 3);
-            newArray.forEach((element, index) => {
-                let title = element.title.slice(0, 20);
-                let content = element.body.slice(0, 100);
-            externalApiInfo += `
+        .then((result) => {
+            let apiinfo = "";
+            result.slice(0,3).forEach((element, index) => {
+                apiinfo += `
             <div class="cards-recentProjects" role="list-item">
                 <div>
                     <img
@@ -23,7 +20,7 @@ const infoJson = () => {
             `;
         });
         document.querySelector(".grid-recentProjects").innerHTML +=
-            externalApiInfo;
+        apiinfo;
         });
-    };
-infoJson();
+}
+jsonapi();

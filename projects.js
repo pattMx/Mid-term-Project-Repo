@@ -1,24 +1,22 @@
 
-const getInfoJson = () => {
+const jsonapiproject = () => {
     fetch("https://jsonplaceholder.typicode.com/posts")
         .then((response) => response.json())
-        .then((res) => {
-            document.querySelector(".simplify-title").innerText = res[0].title.slice(0,20);
-            document.querySelector(".simplify-bigtext").innerText = res[0].body;
+        .then((result) => {
+            document.querySelector(".simplify-title").innerText = result[0].title.slice(0,20);
+            document.querySelector(".simplify-bigtext").innerText = result[0].body;
         });
 };
 
-getInfoJson();
+jsonapiproject();
 
-const getOtherProjects = () => {
+const jsonapiotherprojects = () => {
     fetch("https://jsonplaceholder.typicode.com/posts")
         .then((response) => response.json())
-        .then((res) => {
-            let externalApiInfo = "";
-            let newArray = res.slice(1, 4);
-            newArray.forEach((element, index) => {
-                let title = element.title.slice(0, 20);
-                externalApiInfo += `
+        .then((result) => {
+            let apiinfo = "";
+            result.slice(1, 4).forEach((element, index) => {
+                apiinfo += `
                 <div class="cards-recentProjects" role="list-item">
                 <div>
                 <img class="img-recentProjects" src="./imagenes/projects-section/${index + 2}.jpg" alt="project-image-1"/>
@@ -29,7 +27,7 @@ const getOtherProjects = () => {
                 </div>
                 `;
             });
-            document.querySelector(".grid-recentProjects").innerHTML += externalApiInfo;
+            document.querySelector(".grid-recentProjects").innerHTML += apiinfo;
         });
 };
-getOtherProjects();
+jsonapiotherprojects();

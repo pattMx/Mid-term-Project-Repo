@@ -1,6 +1,6 @@
 
 
-const addInfo = (preventForm) => {
+const infoform = (preventForm) => {
     preventForm.preventDefault();
 
     let fullName = document.querySelector("#name").value;
@@ -20,17 +20,9 @@ const addInfo = (preventForm) => {
     })
         .then((response) => response.json())
         .then((formData) => console.log(formData))
-        .catch(() => {
-            let formDone = document.querySelector(".ok-form");
-            formDone.style.display = "block";
-        })
         .then(() => inputs.reset())
-        .catch((error) => {
-            let formFail = document.querySelector(".f-form");
-            formFail.style.display = "block";
-            console.log("ERROR");
-        });
+        .catch((error) => console.log(error));
 };
 
 let inputs = document.querySelector("#email-contact");
-inputs.addEventListener("submit", addInfo);
+inputs.addEventListener("submit", infoform);
